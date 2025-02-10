@@ -43,7 +43,7 @@ function App() {
       </div>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-evenly", flexWrap: "wrap", gap: "10px", padding: "20px" }}>
         {filteredRows.map((item) => (
-          <div key={item.id} className="border border-black font-bold" style={{ padding: "10px", borderRadius: "10px" }}>
+          <div key={item.id} id='card' className="border border-black font-bold" style={{ padding: "10px", borderRadius: "10px" }}>
             <img src={item.image} alt={item.name} style={{ width: "100%", height: "300px", objectFit: "contain" }} />
             <h1 style={{fontSize:"24px"}}>{item.name}</h1>
             <p>{item.price}</p>
