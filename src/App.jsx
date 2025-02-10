@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-
+import time from "./assets/time.png"
 function App() {
   const [rows, setRows] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,7 +23,7 @@ function App() {
     setSearchTerm(e.target.value);
   };
 
-  // Filter rows based on the search term
+
   const filteredRows = rows.filter((item) =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -46,7 +46,11 @@ function App() {
           <div key={item.id} className="border border-black font-bold" style={{ padding: "10px", borderRadius: "10px" }}>
             <img src={item.image} alt={item.name} style={{ width: "100%", height: "300px", objectFit: "contain" }} />
             <h1 style={{fontSize:"24px"}}>{item.name}</h1>
-            <p>{item.price}</p>
+            <div style={{display:"flex", alignItems:"center", gap:"10px"}}>
+              <img src={time} alt="time icon" style={{width:"25px"}} />
+              <p>{item.price}</p>
+            </div>
+            <p>{item.duration}</p>
             <p className="text-[gray]">{item.description}</p>
             <button className="bg-blue-500 text-white" style={{ padding: "10px" }}><a href={item.link} target='_blank'>Click for more info</a></button>
           </div>
