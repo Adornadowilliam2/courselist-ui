@@ -36,7 +36,7 @@ function App() {
           type="text"
           placeholder="Search...."
           className="border border-black"
-          style={{ padding: "10px", background: "white" }}
+          style={{ padding: "10px", background: "white",width:"100%" }}
           value={searchTerm}
           onChange={handleSearchChange}
         />
