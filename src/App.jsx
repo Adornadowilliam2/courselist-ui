@@ -47,7 +47,7 @@ function App() {
             <img src={item.image} alt={item.name} style={{ width: "300px", height: "300px", objectFit: "cover" }} />
             <h1>{item.name}</h1>
             <p className="text-[gray]">{item.description}</p>
-            <button className="bg-blue-500 text-white" style={{ padding: "10px" }}><a href={item.link}>Click for more info</a></button>
+            <button className="bg-blue-500 text-white" style={{ padding: "10px" }}><a href={item.link} target='_blank'>Click for more info</a></button>
           </div>
         ))}
       </div>
