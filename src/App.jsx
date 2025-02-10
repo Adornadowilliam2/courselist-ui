@@ -44,8 +44,8 @@ function App() {
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-evenly", flexWrap: "wrap", gap: "10px", padding: "20px" }}>
         {filteredRows.map((item) => (
           <div key={item.id} className="border border-black font-bold" style={{ padding: "10px", borderRadius: "10px" }}>
-            <img src={item.image} alt={item.name} style={{ width: "300px", height: "300px", objectFit: "cover" }} />
-            <h1>{item.name}</h1>
+            <img src={item.image} alt={item.name} style={{ width: "100%", height: "300px", objectFit: "cover" }} />
+            <h1>{item.name}</h1>  x
             <p className="text-[gray]">{item.description}</p>
             <button className="bg-blue-500 text-white" style={{ padding: "10px" }}><a href={item.link} target='_blank'>Click for more info</a></button>
           </div>
