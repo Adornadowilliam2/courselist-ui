@@ -1,6 +1,4 @@
-/* #card{
-    width: 400px;
-} */
+@import "tailwindcss";
 
 #grid-container{
     display: grid;
@@ -44,15 +42,8 @@ button:hover{
     background-color: #0b509b;
 }
 
-#card{
-    border-radius: 20px;
-    background-color: white;
 
-}
 
-#info{
-    padding: 10px 20px;
-}
 @media (max-width:767px){
     #grid-container{
         display: grid;
