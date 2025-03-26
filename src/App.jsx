@@ -52,6 +52,7 @@ function App() {
         </Box>
         <Box style={{ display: "flex", gap: "10px", justifyContent: "center", color: "rgb(37, 36, 36)" }}>
           <a href="https://www.mfi.edu.ph/" target="_blank">Home</a>
+          <a>•</a>
           <a href="https://www.facebook.com/MFIPolytechnic" target="_blank">Facebook Page</a>
         </Box>
         <TextField
